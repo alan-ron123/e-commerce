@@ -8,7 +8,7 @@ import OffcanvasExample from "./bar";
 import "./bar.css";
 import Svg from "../logo/home-page-logo.gif";
 
-function Header({ cart, search, searche }) {
+function Header({ countCart, search, searche }) {
   return (
     <div className="stick">
       <div className="container1">
@@ -38,9 +38,9 @@ function Header({ cart, search, searche }) {
           <Link className="icon" to="/cart">
             <FaShoppingCart />
           </Link>
-          {/* <span className="cart-length">
-            {cart.length === 0 ? "" : cart.length}
-          </span> */}
+          <span className="cart-length">
+            {countCart === 0 ? "0" : countCart}
+          </span>
         </div>
         <div className="log">
           <Link className="power" to="/">

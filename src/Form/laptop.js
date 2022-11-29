@@ -4,15 +4,16 @@ import Header from "./Header";
 import "./body.css";
 import { useState } from "react";
 import Sidebarr from "./sidebarr";
+import Cart from "./cart";
 
-function Laptop({ onAdd }) {
+function Laptop({ onAdd, cart, countCart }) {
   const [search, setSearch] = useState("");
   function handleSearch(event) {
     setSearch(event.target.value);
   }
   return (
     <div>
-      <Header searche={handleSearch} search={search} />
+      <Header searche={handleSearch} search={search} countCart={cart.length} />
       <div className="spread">
         <div className="sidde">
           <Sidebarr />

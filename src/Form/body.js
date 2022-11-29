@@ -5,17 +5,22 @@ import { Items } from "./Items";
 import { useState } from "react";
 import Sidebarr from "./sidebarr";
 
-function Body({ onAdd, cart }) {
+function Body({ onAdd, cart, countCart }) {
   const [search, setSearch] = useState("");
   function handleSearch(event) {
     setSearch(event.target.value);
   }
-  console.log("cart", cart);
+  // console.log("cart", cart);
 
   return (
     <div>
       <div className="position-sticky">
-        <Header searche={handleSearch} cart={cart} search={search} />
+        <Header
+          searche={handleSearch}
+          search={search}
+          countCart={cart.length}
+          cart={cart}
+        />
       </div>
 
       <div className="spread">

@@ -11,6 +11,7 @@ import Header from "./Form/Header";
 function App() {
   const [cart, setCart] = useState([]);
 
+  console.log("ab", cart);
   const onAdd = (item) => {
     const productExist = cart.find((data) => data.id === item.id);
     if (productExist) {
@@ -51,9 +52,19 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Validation />} />
-        <Route path="/body" element={<Body onAdd={onAdd} cart={cart} />} />
-        <Route path="/mobile" element={<Mobile onAdd={onAdd} cart={cart} />} />
-        <Route path="/laptop" element={<Laptop onAdd={onAdd} cart={cart} />} />
+
+        <Route
+          path="/body"
+          element={<Body onAdd={onAdd} cart={cart} countCart={cart.length} />}
+        />
+        <Route
+          path="/mobile"
+          element={<Mobile onAdd={onAdd} cart={cart} countCart={cart.length} />}
+        />
+        <Route
+          path="/laptop"
+          element={<Laptop onAdd={onAdd} cart={cart} countCart={cart.length} />}
+        />
         <Route
           path="/cart"
           element={
@@ -63,6 +74,7 @@ function App() {
               onRemove={onRemove}
               onClear={onClear}
               cart={cart}
+              countCart={cart.length}
             />
           }
         />
