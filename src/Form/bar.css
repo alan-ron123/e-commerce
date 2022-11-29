@@ -1,0 +1,9 @@
+.shrink {
+  position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  .shrink {
+    display: none;
+  }
+}

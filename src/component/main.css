@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+}
+.cha {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  color: white;
+}

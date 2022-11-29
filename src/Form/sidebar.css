@@ -1,0 +1,16 @@
+.sidebar {
+  display: flex;
+  position: relative;
+}
+p {
+  margin: 25px;
+}
+
+.linke {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.linke.active {
+  color: #3072bc;
+}

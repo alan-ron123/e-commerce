@@ -1,0 +1,91 @@
+p {
+  color: red;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  display: flex;
+}
+img {
+  width: 90vh;
+  height: 90vh;
+}
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: large;
+  color: rgb(40, 116, 182);
+}
+.separate {
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgb(239, 239, 241);
+  margin-top: 50px;
+  margin-left: 250px;
+  height: 500px;
+  width: 300px;
+  padding-top: 30px;
+  border-radius: 10px;
+  border: solid grey;
+}
+input {
+  border: 1px solid black;
+  background-color: rgba(246, 249, 250, 0.958);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+.btn {
+  background-color: rgb(40, 116, 182);
+  opacity: 0.8;
+  border: 0;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 20px;
+  width: 100px;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 50vh;
+    margin: auto;
+  }
+  .separate {
+    margin: auto;
+  }
+  @media screen and (max-width: 425px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      margin: auto;
+    }
+    .separate {
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      margin: auto;
+    }
+    .separate {
+      margin: auto;
+    }
+  }
+}

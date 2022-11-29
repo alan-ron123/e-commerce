@@ -1,0 +1,15 @@
+.nav1 {
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+}
+.logo {
+  display: flex;
+  margin-right: 20px;
+}
+ul {
+  margin: 10px;
+}

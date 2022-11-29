@@ -1,0 +1,23 @@
+h3 {
+  margin: 10px;
+}
+
+.split {
+  width: 50%;
+  margin-left: 50px;
+  font-size: small;
+  color: gray;
+  letter-spacing: 1px;
+}
+.text {
+  width: 100%;
+  display: flex;
+}
+.right {
+  width: 50%;
+  margin-left: 150px;
+}
+.image1 {
+  height: 200px;
+  width: 400px;
+}
