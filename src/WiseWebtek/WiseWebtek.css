@@ -1,0 +1,28 @@
+#innovation {
+  background-color: rgb(185, 31, 31);
+  color: white;
+}
+#offers {
+  background-color: rgb(150, 25, 25);
+  color: white;
+}
+#Footer {
+  background-color: rgb(150, 25, 25);
+  color: white;
+}
+hr {
+  width: 100px;
+}
+#image {
+  height: 300px;
+}
+#radius {
+  border-radius: 20px;
+  width: 300px;
+}
+#carousal-img {
+  height: 400px;
+}
+#img-size {
+  width: 600px;
+}
